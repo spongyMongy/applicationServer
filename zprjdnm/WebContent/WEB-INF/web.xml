@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
+  <display-name>Book Shop</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  
+  
+    <servlet>
+    <servlet-name>Logout</servlet-name>
+    <servlet-class>pack.Logout</servlet-class>
+  </servlet>
+  
+  
+  <servlet>
+    <servlet-name>Login</servlet-name>
+    <servlet-class>pack.Login</servlet-class>
+  </servlet>
+  
+
+  <servlet>
+    <servlet-name>AddtoBasket</servlet-name>
+    <servlet-class>pack.AddtoBasket</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>ClearCart</servlet-name>
+    <servlet-class>pack.ClearCart</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>DeleteBook</servlet-name>
+    <servlet-class>pack.DeleteBook</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>AddBook</servlet-name>
+    <servlet-class>pack.AddBook</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>BuyAll</servlet-name>
+    <servlet-class>pack.BuyAll</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>Login</servlet-name>
+    <url-pattern>/Login</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>Logout</servlet-name>
+    <url-pattern>/Logout</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>AddtoBasket</servlet-name>
+    <url-pattern>/AddtoBasket</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>ClearCart</servlet-name>
+    <url-pattern>/ClearCart</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>DeleteBook</servlet-name>
+    <url-pattern>/DeleteBook</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>AddBook</servlet-name>
+    <url-pattern>/AddBook</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>BuyAll</servlet-name>
+    <url-pattern>/BuyAll</url-pattern>
+  </servlet-mapping>
+  
+  <session-config>
+    <session-timeout>40</session-timeout>
+  </session-config>
+</web-app>

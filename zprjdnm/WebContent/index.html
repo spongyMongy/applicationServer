@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Login</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+  <style>
+  
+  
+  
+  
+  .jumbotron {
+      background-color: #9400D3;
+      color: #eeeeee;
+      padding: 100px 25px;
+  }
+  .bg-grey {
+      background-color: #cccccc;
+  }
+  .container-fluid {
+      padding: 60px 50px;
+  }
+  .form-container{
+	
+	align-content: center;
+	
+}
+.title{
+	font-family: 'Pacifico', cursive;
+	text-align:center;
+}
+  </style>
+</head>
+<body>
+    <div class="container-fluid bg text-center">
+    <div class="jumbotron text-center">
+        <div class="row">
+            <div class="col-md-4 col-sm-4 col-xs-12">
+        <form action="Login" class="form-container" method="POST">
+            <h1 class="title">Book Shop</h1>
+            <input type="text" name="userName1" class="form-control" placeholder="Enter Your Name"></br>
+
+                    
+            <input type="password" name="password1" class="form-control"  placeholder="Enter the password"></br>
+            <div class="input-group-btn">
+            <button type="submit" name="submit" class="btn btn btn-warning btn-block btn-danger" value="login">Login</button></br>
+            </div>
+            <a href="register.jsp" style="color:white">Registration</a>
+        </form>
+            </div>
+           <img src="img/logo1.jpg" alt="Trulli" width="500" height="333">
+           
+    </div>
+    </div>
+    </div>
+</body>
+</html>
